@@ -1,0 +1,35 @@
+    <header>
+      <h2>ap mobile</h2>
+
+      <div class="dropdown">
+        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+          Dropdown
+          <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1" ng-model="captionQuery">
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
+          
+
+          <div ng-repeat="news in newsList">
+            <input type="checkbox" data-ng-model='captionQuery[news.Caption]'/> {{news.Caption}}
+          </div>
+        </ul>
+
+      </div>
+
+      
+    
+    </header>
+
+
+    <div class="newsContainer">
+      <div class="tiles" ng-repeat="news in newsList | checkmark:captionQuery " >
+        <a href="#" class="">
+          <img class="newsImage" ng-src="{{news.TileProperties.HomeURL}}" alt="...">
+          <h6 class="caption"><span>{{news.Caption}}</span></h6>
+        </a>
+      </div>
+    </div>
+
+

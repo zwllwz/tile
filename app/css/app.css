@@ -1,0 +1,50 @@
+/* app css stylesheet */
+@media screen and (max-width: 1600px) and (min-width: 600px){
+
+  body {
+    margin: 0px;
+    text-align: center;
+  }
+
+  .dropdown {
+    position: relative;
+  }
+
+  .newsContainer {
+    width: 800px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .tiles {
+    height: 200px;
+    width: 200px;
+    position: relative;
+    float: left;
+
+  }
+
+  .newsImage {
+    height: 200px;
+    width: 200px;
+  }
+  .caption {
+    position: absolute;
+    top: 150px;
+    left: 0;
+  }
+  .caption span {
+    color: white; 
+    font: bold 24px/45px Helvetica, Sans-Serif; 
+    letter-spacing: -1px;  
+    background: rgb(0, 0, 0); /* fallback color */
+    background: rgba(0, 0, 0, 0.1);
+    padding: 10px; 
+  }
+
+}
+
+
+
+
